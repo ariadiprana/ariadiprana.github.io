@@ -490,6 +490,10 @@
 
 /* Feature */
 
+	.feature p a {
+			text-decoration: underline;
+			color: #000000;
+		}
 	.feature-grid {
 		position: relative;
 	}
