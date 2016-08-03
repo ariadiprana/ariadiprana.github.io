@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>ariadiprana</title>
+    
+    <!--Personal Meta Data -->
+        <meta name="description" content="ariadiprana landing page powered by Hactiv8.">
+        <meta name="keywords" content="hacktiv8, coding, bootcamp, javascript, web, developer">
+        <meta name="author" content="ariadiprana">
+
+    <!-- Schema.org markup for Google+ -->
+        <meta itemprop="name" content="ariadiprana">
+        <meta itemprop="description" content="ariadiprana landing page powered by Hactiv8.">
+        <meta itemprop="image" content="images/banner.jpg">
+
+    <!-- Twitter Card data -->
+        <meta name="twitter:card" content="ariadiprana">
+        <meta name="twitter:site" content="@ariadiprana">
+        <meta name="twitter:title" content="AriAdiprana - Hacktiv8">
+        <meta name="twitter:description" content="This is a landing page powered by hacktiv8">
+        <meta name="twitter:creator" content="@ariadiprana">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+        <meta name="twitter:image:src" content="https://ariadiprana.github.io/images/logo-hacktiv8_bordered.png">
+
+    <!-- Open Graph data -->
+        <meta property="og:title" content="ariadiprana" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://ariadiprana.github.io/" />
+        <meta property="og:image" content="https://ariadiprana.github.io/images/logo-hacktiv8_bordered.png" />
+        <meta property="og:description" content="This is a landing page powered by hacktiv8" />
+        <meta property="og:site_name" content="ariadiprana" />
+        <meta property="article:section" content="Article Section" />
+        <meta property="article:tag" content="Article Tag" />
+        <meta property="fb:admins" content="597963481" />
+
+        <link rel="icon" href="../images/icon/Thor.png" type="image/x-icon"/>
+        <link rel="stylesheet" href="../styles/index.css">
+
+    <!-- Testing using chart online -->
+        <!-- amCharts javascript sources -->
+        <script type="text/javascript" src="http://www.amcharts.com/lib/3/amcharts.js"></script>
+        <script type="text/javascript" src="http://www.amcharts.com/lib/3/pie.js"></script>
+
+        <!-- amCharts javascript code -->
+        <script type="text/javascript">
+          AmCharts.makeChart("chartdiv",
+            {
+              "type": "pie",
+              "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+              "titleField": "category",
+              "valueField": "column-1",
+              "allLabels": [],
+              "balloon": {},
+              "legend": {
+                "enabled": true,
+                "align": "center",
+                "markerType": "circle"
+              },
+              "titles": [],
+              "dataProvider": [
+                {
+                  "category": "Kartu Indonesia Sehat",
+                  "column-1": "350"
+                },
+                {
+                  "category": "Gerakan Antar Anak Sekolah",
+                  "column-1": "600"
+                },
+                {
+                  "category": "Penghapusan MOS",
+                  "column-1": "50"
+                }
+              ]
+            }
+          );
+        </script>
+  </head>
+
+  <body>
+    <!-- Header -->
+      <header id="header">
+        <h1><a href="../index.html">ariadiprana</a></h1>
+        <nav id="nav">
+          <ul>
+            <li><a href="#"> about </a></li>
+            <li><a href="news/first-news.html"> news </a></li>
+            <li><a href="#"> work </a></li>
+            <li><a href="#"> gallery </a></li>
+            <li><a href="#"> contact </a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <!-- Headline Title -->
+      <section id="main" class="wrapper">
+        <div class="container">
+
+          <header class="major special align-center">
+            <h2>Anies Baswedan Dicopot</h2> | 
+          <h6>ditulis oleh ariadiprana</h6>
+          </header>          
+          <img src="../images/news/anies.jpg" alt="" width="100%" />
+        </div>
+      </section>
+
+
+      <!-- Content -->
+        <section id="three" class="wrapper style1">
+          <p>Beberapa hari lalu <b>Presiden Joko Widodo</b> telah resmi mengumumkan pencopotan <b>Anies Baswedan</b> dari posisinya sebagai Menteri Pendidikan dan Kebudayaan Republik Indonesia. Pencopotan ini lantas menjadi pembicaraan hangat di media sosial dan mengundang reaksi netizen, pertanyaan utamanya tetap satu yaitu <em>"Mengapa Anies Diganti ?"</em> </p>
+
+          <p>Setelah survei yang dilakukan kepada lebih dari 1000 orang tua , kami menemukan data seperti ini</p>
+        <!--Testing Online Chart -->
+          <div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+
+          <br><br><br>
+          <section class="align-center">
+            <h3>Dan pemenangnya adalah</h3>
+            <h2 class="major special">Gerakan Antar Anak Sekolah</h2>
+          </section>
+          <blockquote>... gerakan ini..pokoknya..harus terus dilanjutkan ya...</blockquote>
+          <p>Itulah hasil dari tanya jawab langsung dengan salah satu orang tua yang ikut mengantar anaknya ke sekolah, ada banyak alasan mengapa mereka sangat bersemangat mengantar anaknya ke sekolah, padahal anak nya sudah besar, bahkan nggak cuma sehari saja, tapi ternyata gerakan ini terus menerus dilaksanakan oleh orang tuanya dari hari ke hari. </p>
+
+          <p class="align-center">Usut punya usut ternyata inilah penyebabnya</p>
+
+        <!-- Image -->
+          <section>
+              <center><img src="../images/news/6.jpg" alt="" /></center>
+             <div class="table-wrapper">
+                    <img src="../images/news/4.jpg" alt="" />
+                    <img src="../images/news/2.jpg" alt="" />
+                    <img src="../images/news/3.jpg" alt="" />
+                    <img src="../images/news/1.jpg" alt="" />
+                    <img src="../images/news/5.jpg" alt="" />
+            </div>
+          </section>  
+        
+        <br><br><br><br>
+        
+        <!--Closing Content-->
+          <header class="align-center">
+              <h3>Berita ini hanya untuk hiburan semata</h3>
+              <p>nggak usa serius-serius banget ya bacanya</p>
+          </header>
+
+        <!-- Footer -->
+          <footer id="footer">
+            <div class="container">
+               <!-- instagram -->
+            <a href="https://www.instagram.com/ariadiprana/">
+              <img src="https://image.freepik.com/free-icon/instagram-logo_318-84939.jpg" height="20px" width="20px" alt="Logo of Instagram">
+            </a>
+            <a href="https://www.instagram.com/ariadiprana/">Instagram</a> |
+
+            <!-- facebook -->
+            <a href="https://www.facebook.com/ari.adiprana">
+              <img src="https://image.freepik.com/free-icon/facebook-logo_318-49940.jpg" height="20px" width="20px" alt="Logo of Facebook">
+            </a>
+            <a href="https://www.facebook.com/ari.adiprana">Facebook</a> |
+
+            <!-- you tube -->
+            <a href="https://www.youtube.com/channel/UCGA9uOF9yWAJ9l-sQ6TLTOA">
+              <img src="https://image.freepik.com/free-icon/youtube-logotype_318-65152.jpg" height="20px" width="20px" alt="Logo of Youtube">
+            </a>
+            <a href="https://www.youtube.com/channel/UCGA9uOF9yWAJ9l-sQ6TLTOA">You Tube</a> |
+
+            <!-- line -->
+            <img src="https://image.freepik.com/free-icon/line-logo_318-102660.jpg" height="20px" width="20px" alt="logo of Line">
+            ariadiprana
+            </div>
+          </footer>
+
+        
+      
+
+      <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>  
+  </body>
+
+</html>
