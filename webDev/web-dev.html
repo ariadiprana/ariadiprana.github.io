@@ -36,30 +36,6 @@
 
         <link rel="icon" href="../images/icon/Thor.png" type="image/x-icon"/>
         <link rel="stylesheet" href="../styles/index.css">
-
-    <!-- Trying DonutChart from Google -->
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <script type="text/javascript">
-          google.charts.load("current", {packages:["corechart"]});
-          google.charts.setOnLoadCallback(drawChart);
-          function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-              ['Program', 'Responden'],
-              ['Penghapusan MOS',     50],
-              ['Kartu Indonesia Sehat',      350],
-              ['Gerakan Antar Anak Sekolah',  600]
-            ]);
-
-            var options = {
-              title: 'Tingkat Kepuasan Masyarakat pada Program Kemendikbud',
-              pieHole: 0.4,
-            };
-
-            var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-            chart.draw(data, options);
-          }
-        </script>
-    
   </head>
 
   <body>
@@ -68,68 +44,62 @@
         <h1><a href="../index.html">ariadiprana</a></h1>
         <nav id="nav">
           <ul>
-            <li><a href="first-news.html"> news </a></li>
+            <li><a href="../news/first-news.html"> news </a></li>
             <li><a href="../blog/2016-08-03_first_story.html"> story </a></li>
-            <li><a href="../webDev/web-dev.html"> webdev </a></li>
+            <li><a href="web-dev.html"> webdev </a></li>
             <li><a href="#"> contact </a></li>
           </ul>
         </nav>
       </header>
 
-    <!-- Headline Title -->
+      <!-- Headline Title -->
       <section id="main" class="wrapper">
+        <header class="major special align-center">
+            <h2>Tentang Web Development</h2>
+          </header>  
+      <img src="../images/webdev/webdev.jpg" alt="" width="100%" /> 
         <div class="container">
-
-          <header class="major special align-center">
-            <h2>Anies Baswedan Dicopot</h2> | 
-          <h6>ditulis oleh ariadiprana</h6>
-          </header>          
-          <img src="../images/news/anies.jpg" alt="" width="100%" />
+          
+                 
         </div>
       </section>
 
-
       <!-- Content -->
-        <section id="three" class="wrapper style1">
-          <p>Beberapa hari lalu <b>Presiden Joko Widodo</b> telah resmi mengumumkan pencopotan <b>Anies Baswedan</b> dari posisinya sebagai Menteri Pendidikan dan Kebudayaan Republik Indonesia. Pencopotan ini lantas menjadi pembicaraan hangat di media sosial dan mengundang reaksi netizen, pertanyaan utamanya tetap satu yaitu <em>"Mengapa Anies Diganti ?"</em> </p>
+      <section class="align-center">
+        <p>
+          Bagian ini akan menjawab pertanyaan-pertanyaan yang ada pada pembelajaran
+        </p>
+        <h2>Learn Process of Website Development</h2>
+        <p>
+          Berikut jawabannya
+        </p>
 
-          <p>Setelah survei yang dilakukan kepada lebih dari 1000 orang tua , kami menemukan data seperti ini</p>
-          
-      <!-- Trying DonutChart from Google -->
-            <center><div id="donutchart" style="width: 900px; height: 500px;"></div></center>
+        <div class="feature-grid">
+              <div class="feature">                
+                  <h3>Website apa yang paling ingin kamu buat? Tentang apa?</h3>
+                  <p>Untuk saat ini , website yang benar-benar ingin saya buat adalah mendirikan startup di bidang olahraga. Saya ingin mempermudah urusan booking lapangan menjadi serba online. Kalau perlu langsung bayar full sebelum bermain biar ada rasa tanggung jawab juga dan nggak ditinggal lari pas sudah book. Kenapa ingin saya buat ? Karena saat ini memang rasanya belum ada aplikasi / website seperti ini. Kalau ada yang ingin membuat hal serupa, yuk kita bikin bareng, waktunya berkolaborasi 
+                  </p>
+              </div>
+              <div class="feature">                
+                  <h3>Hasil atau informasi apa yang paling ingin kamu sampaikan?</h3>
+                  <p>
+                    Melanjutkan jawaban disamping, maka di website itu perlu ditampilkan kondisi lapangan jam berapa hari apa yang masih kosong, lalu rate harga lapangan, lokasi, contact yang bisa dihubungi. Lalu untuk pembayaran hanya bisa dilakukan dengan online payment, nanti bisa di hubungkan dengan payment gateway. Setelah urusan payment beres, ada receipt online , ketika datang hari H , tinggal ditunjukkan, dan nanti di tempat sang pegawai lapangan tinggal scan QR barcode yang tergenerate oleh system.
+                  </p>
+              </div>
+        </div>
+        <div class="feature-grid">
+            <h3>Bagaimana kira-kira kamu memproses pembuatan website dari awal hingga akhir?</h3>
+            <p>
+                Ini lebih ke step-stepnya kah ? Kalau iya, pertama saya harus mencari tau dulu berapa sih fasilitas olahraga yang disewakan, untuk sampling ambil kota Jakarta dulu. Lalu sampling lagi untuk interview ke pemilik fasilitas olahraga kalau ada aplikasi booking online ini apakah mereka setuju. Kalau hal-hal diluar teknis sudah selesai, barulah masuk ke teknisnya ke UI seperti apa, UX seperti apa, dan mencari web developer maupun web designer.
+            </p>
+        </div>
 
-          <br><br><br>
-          <section class="align-center">
-            <h3>Jadi pemenangnya adalah</h3>        
-      
-            <h2 class="major special">Gerakan Antar Anak Sekolah</h2>
-          </section>
-          <blockquote>... gerakan ini..pokoknya..harus terus dilanjutkan ya...</blockquote>
-          <p>Itulah hasil dari tanya jawab langsung dengan salah satu orang tua yang ikut mengantar anaknya ke sekolah, ada banyak alasan mengapa mereka sangat bersemangat mengantar anaknya ke sekolah, padahal anak nya sudah besar, bahkan nggak cuma sehari saja, tapi ternyata gerakan ini terus menerus dilaksanakan oleh orang tuanya dari hari ke hari. </p>
-
-          <p class="align-center">Usut punya usut ternyata inilah penyebabnya</p>
-
-        <!-- Image -->
-          <section>
-              <center><img src="../images/news/6.jpg" alt="" /></center>
-             <div class="table-wrapper">
-                    <img src="../images/news/4.jpg" alt="" />
-                    <img src="../images/news/2.jpg" alt="" />
-                    <img src="../images/news/3.jpg" alt="" />
-                    <img src="../images/news/1.jpg" alt="" />
-                    <img src="../images/news/5.jpg" alt="" />
-            </div>
-          </section>  
+        <table>
+      </section>
         
-        <br><br><br><br>
-        
-        <!--Closing Content-->
-          <header class="align-center">
-              <h3>Berita ini hanya untuk hiburan semata</h3>
-              <p>nggak usa serius-serius banget ya bacanya</p>
-          </header>
 
-        <!-- Footer -->
+
+  <!-- Footer -->
           <footer id="footer">
             <div class="container">
                <!-- instagram -->
