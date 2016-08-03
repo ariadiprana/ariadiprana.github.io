@@ -274,6 +274,14 @@
 		text-align: right;
 	}
 
+	.text-red {
+		color:red;
+	}
+
+	.text-green {
+		color:green;
+	}
+
 /* Box */
 
 	.box {
