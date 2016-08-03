@@ -1312,6 +1312,7 @@
 		#header h1 {
 			color: #484848;
 			font-weight: 400;
+			font-size: 20px;
 			height: inherit;
 			left: 1.25em;
 			line-height: inherit;
@@ -1320,6 +1321,18 @@
 			position: absolute;
 			top: 0;
 		}
+			#header h1 a {
+				-moz-transition: color 0.2s ease-in-out;
+				-webkit-transition: color 0.2s ease-in-out;
+				-ms-transition: color 0.2s ease-in-out;
+				transition: color 0.2s ease-in-out;
+				color: #666;
+				display: inline-block;
+				text-decoration: none;
+			}
+				#header h1 a:hover {
+					color: #484848;
+				}			
 
 		#header nav {
 			height: inherit;
@@ -1403,6 +1416,9 @@
 				#header.alt h1 a {
 					color: #FFF;
 				}
+					#header.alt h1 a:active, #header.alt h1 a:hover {
+						color: #eb5c2b;
+					}
 
 			#header.alt nav {
 				right: 2em;
