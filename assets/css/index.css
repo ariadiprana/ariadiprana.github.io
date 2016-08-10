@@ -1937,6 +1937,10 @@
 		text-align: right;
 	}
 
+	.cursorPointer{
+    cursor: pointer;
+	}
+
 /* Section/Article */
 
 	section.special, article.special {
