@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>ariadiprana</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+
+<!--Personal Meta Data -->
+    <meta name="description" content="ariadiprana landing page powered by Hactiv8.">
+    <meta name="keywords" content="hacktiv8, coding, bootcamp, javascript, web, developer">
+    <meta name="author" content="ariadiprana">
+
+  <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="ariadiprana">
+    <meta itemprop="description" content="ariadiprana landing page powered by Hactiv8.">
+    <meta itemprop="image" content="images/banner.jpg">
+
+  <!-- Twitter Card data -->
+    <meta name="twitter:card" content="ariadiprana">
+    <meta name="twitter:site" content="@ariadiprana">
+    <meta name="twitter:title" content="AriAdiprana - Hacktiv8">
+    <meta name="twitter:description" content="This is a landing page powered by hacktiv8">
+    <meta name="twitter:creator" content="@ariadiprana">
+  <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image:src" content="https://ariadiprana.github.io/images/logo-hacktiv8_bordered.png">
+
+  <!-- Open Graph data -->
+    <meta property="og:title" content="ariadiprana" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://ariadiprana.github.io/" />
+    <meta property="og:image" content="https://ariadiprana.github.io/images/logo-hacktiv8_bordered.png" />
+    <meta property="og:description" content="This is a landing page powered by hacktiv8" />
+    <meta property="og:site_name" content="ariadiprana" />
+    <meta property="article:section" content="Article Section" />
+    <meta property="article:tag" content="Article Tag" />
+    <meta property="fb:admins" content="597963481" />
+
+     <!-- Trying DonutChart from Google -->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load("current", {packages:["corechart"]});
+          google.charts.setOnLoadCallback(drawChart);
+          function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['Program', 'Responden'],
+              ['Penghapusan MOS',     50],
+              ['Kartu Indonesia Sehat',      350],
+              ['Gerakan Antar Anak Sekolah',  600]
+            ]);
+
+            var options = {
+              title: 'Tingkat Kepuasan Masyarakat pada Program Kemendikbud',
+              pieHole: 0.4,
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+            chart.draw(data, options);
+          }
+        </script>
+   
+  </head>
+  <body>
+    <div id="page-wrapper">
+
+      <!-- Header -->
+        <header id="header">
+          <h1><a href="index.html">ari</a>adiprana</h1>
+          <nav id="nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <a href="#" class="icon fa-angle-down">Week 1</a>
+                <ul>
+                  <li><a href="first-news.html">News</a></li>
+                  <li><a href="2016-08-03_first_story.html">Story</a></li>
+                  <li><a href="web-dev.html">Web Dev</a></li>
+                  <li><a href="wireframes.html">Wireframes</a></li>
+                  <li><a href="webEvaluation.html">Web Evaluation</a></li>
+                  <li><a href="webDesign.html">Web Design</a></li>
+                  <li><a href="core-values.html">Core Values</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="icon fa-angle-down">Week 2</a>
+                <ul>
+                  <li><a href="math-basic.html">Math Basic</a></li>
+                </ul>
+              </li>
+              <li><a href="reflection.html">Reflection</a></li>
+              <li><a href="https://medium.com/@ariadiprana/easiest-way-to-build-your-first-website-using-git-for-free-96b3143b4ad1#.6uclyxmlf">Blog</a></li>
+                  <!-- 
+                    <li>
+                      <a href="#">Submenu</a>
+                      <ul>
+                        <li><a href="#">Option One</a></li>
+                        <li><a href="#">Option Two</a></li>
+                        <li><a href="#">Option Three</a></li>
+                        <li><a href="#">Option Four</a></li>
+                      </ul>
+                    </li> 
+                  -->
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+      <!-- Main -->
+        <section id="main" class="container">
+          <header>
+            <h2>Anies Baswedan Dicopot</h2>
+            <p>ditulis oleh ariadiprana</p>
+          </header>
+          <div class="box">
+            <span class="image featured"><img src="images/news/anies.jpg" alt="" /></span>
+            <p>Beberapa hari lalu <b>Presiden Joko Widodo</b> telah resmi mengumumkan pencopotan <b>Anies Baswedan</b> dari posisinya sebagai Menteri Pendidikan dan Kebudayaan Republik Indonesia. Pencopotan ini lantas menjadi pembicaraan hangat di media sosial dan mengundang reaksi netizen, pertanyaan utamanya tetap satu yaitu <em>"Mengapa Anies Diganti ?"</em> </p>
+            
+             <p>Setelah survei yang dilakukan kepada lebih dari 1000 orang tua , kami menemukan data seperti ini</p>
+
+            <!-- Trying DonutChart from Google -->
+            <center>
+              <div id="donutchart" style="width: 900px; height: 500px;"></div>
+              <h4>Jadi pemenangnya adalah</h4>
+              <h2>Gerakan Antar Anak Sekolah</h2>
+            </center>
+
+            <div class="row">
+              <div class="6u 12u(mobilep)">
+              <br><br>
+                <blockquote>... gerakan ini..pokoknya..harus terus dilanjutkan ya...</blockquote>
+              </div>
+              <div class="6u 12u(mobilep)">
+                <p>Itulah hasil dari tanya jawab langsung dengan salah satu orang tua yang ikut mengantar anaknya ke sekolah, ada banyak alasan mengapa mereka sangat bersemangat mengantar anaknya ke sekolah, padahal anak nya sudah besar, bahkan nggak cuma sehari saja, tapi ternyata gerakan ini terus menerus dilaksanakan oleh orang tuanya dari hari ke hari. </p>
+              </div>
+            </div>
+              <br><br><br>
+              <center>Usut punya usut ternyata inilah penyebabnya</center>
+              <br><br><br>
+
+            <div class="row">
+              <div class="6u 12u(mobilep)">
+                <img src="images/news/6.jpg" alt="" width="100%" />
+              </div>
+              <div class="6u 12u(mobilep)">
+                <img src="images/news/2.jpg" alt="" width="100%"/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="6u 12u(mobilep)">
+                <img src="images/news/3.jpg" alt="" width="100%" />
+              </div>
+              <div class="6u 12u(mobilep)">
+                <img src="images/news/1.jpg" alt="" width="100%"/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="3u 12u(mobilep)">
+              <br>
+              </div>
+              <div class="6u 12u(mobilep)">
+                <img src="images/news/4.jpg" alt="" width="100%" />
+              </div>
+              <div class="3u 12u(mobilep)">
+              <br>
+              </div>
+            </div>
+
+          <section id="main" class="container">
+            <header>
+              <h4>Berita ini hanya untuk hiburan semata</h4>
+              <h3>nggak usa serius-serius banget ya bacanya</h3>
+            </header>
+          </section>
+
+      <!-- Footer -->
+        <footer id="footer">
+          <ul class="icons">
+            <li><a href="https://www.facebook.com/ari.adiprana" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="https://www.instagram.com/ariadiprana/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="https://github.com/ariadiprana" class="icon fa-github"><span class="label">Github</span></a></li>
+          </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.dropotron.min.js"></script>
+      <script src="assets/js/jquery.scrollgress.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
