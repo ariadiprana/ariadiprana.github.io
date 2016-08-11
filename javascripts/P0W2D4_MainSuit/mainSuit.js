@@ -37,7 +37,7 @@ function mainSuit(){
 }
 
 function pilihanPengguna(){
-	var pilihan =  prompt("Masukkan pilihan kamu (Batu / Gunting / Kertas )");
+	var pilihan =  prompt("Masukkan pilihan kamu (Batu / Gunting / Kertas)");
 	return pilihan.toUpperCase();
 }
 
