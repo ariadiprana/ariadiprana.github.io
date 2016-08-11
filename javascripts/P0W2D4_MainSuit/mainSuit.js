@@ -30,104 +30,62 @@
   =============================================================
 */
 
-function batuKanan(){
-	var lawan = pilihanLawan();
-	var pengguna = "batu";
-	bertarung(lawan,pengguna);
-	//document.getElementById("pengguna").innerHTML = "batu";
+function mainSuit(){
+	var pengguna = pilihanPengguna();
+	var lawan    = pilihanLawan();
+	bertarung(pengguna,lawan);
 }
-function guntingKanan(){
-	var lawan = pilihanLawan();
-	var pengguna = "gunting";
-	bertarung(lawan,pengguna);
+
+function pilihanPengguna(){
+	var pilihan =  prompt("Masukkan pilihan kamu (Batu / Gunting / Kertas");
+	return pilihan.toUpperCase();
 }
-function kertasKanan(){
-	var lawan = pilihanLawan();
-	var pengguna = "kertas";
-	bertarung(lawan,pengguna);
-}
+
 
 function bertarung(a,b){
-	if(a==="batu" && b==="gunting"){
-		alert("Kamu : " +a+ " , Musuh : " +b+ " , Kamu Menang");
+	if(a==="BATU" && b==="GUNTING"){
+		document.getElementById("hasil").innerHTML = "Kamu : " +a+ " , Musuh : " +b+ " , Kamu Menang";
 	}
-	if(a==="batu" && b==="batu"){
-		alert("Kamu : " +a+ " , Musuh : " +b+ " , Kamu Seri");
+	if(a==="BATU" && b==="BATU"){
+		document.getElementById("hasil").innerHTML = "Kamu : " +a+ " , Musuh : " +b+ " , Kamu Seri";
 	}
-	if(a==="batu" && b==="kertas"){
-		alert("Kamu : " +a+ " , Musuh : " +b+ " , Kamu Kalah");
-	}
-
-	if(a==="kertas" && b==="gunting"){
-		alert("Kamu : " +a+ " , Musuh : " +b+ " , Kamu Kalah");
-	}
-	if(a==="kertas" && b==="batu"){
-		alert("Kamu : " +a+ " , Musuh : " +b+ " , Kamu Menang");
-	}
-	if(a==="kertas" && b==="kertas"){
-		alert("Kamu : " +a+ " , Musuh : " +b+ " , Kamu Seri");
+	if(a==="BATU" && b==="KERTAS"){
+		document.getElementById("hasil").innerHTML = "Kamu : " +a+ " , Musuh : " +b+ " , Kamu Kalah";
 	}
 
-	if(a==="gunting" && b==="gunting"){
-		alert("Kamu : " +a+ " , Musuh : " +b+ " , Kamu Seri");
+	if(a==="KERTAS" && b==="GUNTING"){
+		document.getElementById("hasil").innerHTML = "Kamu : " +a+ " , Musuh : " +b+ " , Kamu Kalah";
 	}
-	if(a==="gunting" && b==="batu"){
-		alert("Kamu : " +a+ " , Musuh : " +b+ " , Kamu Kalah");
+	if(a==="KERTAS" && b==="BATU"){
+		document.getElementById("hasil").innerHTML = "Kamu : " +a+ " , Musuh : " +b+ " , Kamu Menang";
 	}
-	if(a==="gunting" && b==="kertas"){
-		alert("Kamu : " +a+ " , Musuh : " +b+ " , Kamu Menang");
+	if(a==="KERTAS" && b==="KERTAS"){
+		document.getElementById("hasil").innerHTML = "Kamu : " +a+ " , Musuh : " +b+ " , Kamu Seri";
+	}
+
+	if(a==="GUNTING" && b==="GUNTING"){
+		document.getElementById("hasil").innerHTML = "Kamu : " +a+ " , Musuh : " +b+ " , Kamu Seri";
+	}
+	if(a==="GUNTING" && b==="BATU"){
+		document.getElementById("hasil").innerHTML = "Kamu : " +a+ " , Musuh : " +b+ " , Kamu Kalah";
+	}
+	if(a==="GUNTING" && b==="KERTAS"){
+		document.getElementById("hasil").innerHTML = "Kamu : " +a+ " , Musuh : " +b+ " , Kamu Menang";
 	}
 }
 
 function pilihanLawan(){
-	var suit = ["batu","gunting","kertas"];
-	
-	//Get a random integer between `min` and `max`.
-	//return Math.floor(Math.random() * (max - min + 1) + min);
-	var arraypilihan = Math.floor(Math.random() * (2 - 0 + 1) + 0);
-	return suit[arraypilihan];
-}
+	//Get a random  between `min` and `max`.
+	//return (Math.random() * (max - min + 1) + min);
+	var mathRandom = (Math.random() * (1 - 0 + 1) + 0);
+	var pilihanLawan;
+	if (mathRandom <= 0.33) {
+    	pilihanLawan = "BATU";
+	} else if(mathRandom <= 0.66) {
+	    pilihanLawan = "GUNTING";
+	} else {
+	    pilihanLawan = "KERTAS";
+	}	
 
-
-
-/*
-  ========================== Task 4 ==========================
-  Task         : parameter pertama: panjang jari-jari dalam cm
-  				 return: hasil luas lingkaran
-  Sample       : luasLingkaran(7) // pi * r^2
-				 // menghasilkan "154 cm"
-  =============================================================
-*/
-
-function lingkaranValidation(){
-	//init value
-	var valResult = [];
-	var angka1 = document.getElementById("T4_angka1").value;
-	
-	//validation
-	if(!angka1){
-		valResult.push("Angka 1 tidak boleh kosong");
-	}
-	else{
-		if(isNaN(angka1)){
-			valResult.push("Angka 1 harus diisi dengan angka");
-		}
-	}
-
-	return valResult;
-}
-
-function lingkaranCalculation() {
-	var valResult = new Array();
-	valResult = lingkaranValidation();
-
-	if(valResult.length>0){
-		document.getElementById("lingkaranResult").value = "";
-		alert(valResult.join("\n"));
-	}
-	else{
-		var angka1 = document.getElementById("T4_angka1").value;
-		var dua = "2";
-		document.getElementById("lingkaranResult").value = (Math.PI*Math.pow(angka1,2)).toFixed(0) + " cm2";
-	}
+	return pilihanLawan;
 }
