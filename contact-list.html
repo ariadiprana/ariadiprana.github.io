@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/index.css" />
+    <script type="text/javascript" src="javascripts/P0W2D4_ContactList/contact-list.js"></script>
 
 <!--Personal Meta Data -->
     <meta name="description" content="ariadiprana landing page powered by Hactiv8.">
@@ -24,18 +25,6 @@
     <meta name="twitter:creator" content="@ariadiprana">
   <!-- Twitter summary card with large image must be at least 280x150px -->
     <meta name="twitter:image:src" content="https://ariadiprana.github.io/images/logo-hacktiv8_bordered.png">
-
-  <!-- Open Graph data -->
-    <meta property="og:title" content="ariadiprana" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://ariadiprana.github.io/" />
-    <meta property="og:image" content="https://ariadiprana.github.io/images/logo-hacktiv8_bordered.png" />
-    <meta property="og:description" content="This is a landing page powered by hacktiv8" />
-    <meta property="og:site_name" content="ariadiprana" />
-    <meta property="article:section" content="Article Section" />
-    <meta property="article:tag" content="Article Tag" />
-    <meta property="fb:admins" content="597963481" />
-
   
   </head>
   <body>
@@ -69,17 +58,6 @@
               </li>
               <li><a href="reflection.html">Reflection</a></li>
               <li><a href="https://medium.com/@ariadiprana/easiest-way-to-build-your-first-website-using-git-for-free-96b3143b4ad1#.6uclyxmlf">Blog</a></li>
-                  <!-- 
-                    <li>
-                      <a href="#">Submenu</a>
-                      <ul>
-                        <li><a href="#">Option One</a></li>
-                        <li><a href="#">Option Two</a></li>
-                        <li><a href="#">Option Three</a></li>
-                        <li><a href="#">Option Four</a></li>
-                      </ul>
-                    </li> 
-                  -->
                 </ul>
               </li>
             </ul>
@@ -89,60 +67,27 @@
       <!-- Main -->
         <section id="main" class="container">
           <header>
-            <br><br>
-            <h2>Get to Know Adaptive Web Design (AWD) dan Responsive Web Design (RWB)</h2>
-            <img src="images/webDesign/webDesign.png" alt="" width="20%" />
-          </header>
-          <div class="box">
-            <div class="row">
-              <div class="table-wrapper">
-              <br><br><br>
-              <table>
-                <tr>
-                  <td><h4>Apa itu adaptive dan responsive web design? Apakah kamu setuju bahwa teknik tersebut bagus? Mengapa iya atau mengapa tidak?</h4></td>
-                </tr>
-                <tr>
-                  <td>
-                    Kemampuan sebuah website untuk dapat ditampilkan ke layar dengan mengikuti medianya, saat ini rata-rata ada 2 media yaitu untuk website from pc / desktop dan versi mobilenya. Tekniknya bagus, karena programmer tidak perlu lagi membuat halaman dalam 2 versi , cukup dengan 1 versi saja.
-                  </td>
-                </tr>
+          	<h2>Contact List</h2>
+            <p><em>Budi .. Andi .. Lia .. Joko</em></p>
+            <table>
+              <tr>
+                <td>
+                  <input type="button" onclick="addContact()" value="Add Contact">
+                </td>
+                <td>
+                  <input type="button" onclick="deleteContact()" value="Delete Contact">
+                </td>
+                <td>
+                  <input type="button" onclick="cariContact()" value="Cari Contact">
+                </td>
+              </tr>
+            </table>
+            <div id="pesan"></div>
+            <div id="hasil"></div>
+            <div id="showContactList"></div>
+          </header> 
 
-                <tr>
-                  <td><h4>Apakah hadirnya smartphone dan tablet mengubah desain web secara signifikan? Bagaimana kira-kira teknologi baru akan mengubah desain web di masa depan?</h4></td>
-                </tr>
-                <tr>
-                  <td>
-                   Iya, sangat-sangat berubah. Kedepan teknologi web tentunya akan menjadi cepat, dan yang namanya user experience akan jauh-jauh lebih diutamakan lagi. Sebisa mungkin semua navigasi, pemrosesan, dll bisa dilakukan dengan cepat.
-                  </td>
-                </tr>
-
-                <tr>
-                  <td><h4>Bagaimana kira-kira orang yang memiliki kekurangan fisik menggunakan website? Apakah kita perlu menyesuaikan website untuk mereka juga? Solusi apa yang dapat mengatasi keadaan tersebut?</h4></td>
-                </tr>
-                <tr>
-                  <td>Pasti kesulitan untuk mengakses, dan sepertinya untuk menyesuaikan dengan kebutuhan mereka bisa diatasi dengan hardware. Contoh solusi yang bisa di pakai adalah adanya system aplikasi eyescanner dari webcam yang bisa membantu orang-orang berkebutuhan khusus untuk navigasi, klik tombol, mengetik dll dengan gerakan mata.
-                  </td>
-                </tr>
-
-                <tr>
-                  <td><h4>Ide atau konsep apa yang sesuai denganmu saat mempelajari desain web?</h4></td>
-                </tr>
-                <tr>
-                  <td>
-                  Saya suka dengan konsep 
-                  <a href="https://medium.com/@erikdkennedy/7-rules-for-creating-gorgeous-ui-part-1-559d4e805cda#.fnho2qt7h">ini</a>
-                  </td>
-                </tr>
-
-              </table>
-              </div>
-          </div>
-      
-      
-
-            
-
-      <!-- Footer -->
+        <!-- Footer -->
         <footer id="footer">
           <ul class="icons">
             <li><a href="https://www.facebook.com/ari.adiprana" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
