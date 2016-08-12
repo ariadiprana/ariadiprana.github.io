@@ -70,7 +70,7 @@ function evaluasiHasil(hasilAkhir,operator,angkaBaru){
 		endDate = new Date();
 		var diff = endDate-startDate;
 		     sec = (diff/1000)%60;
-		document.getElementById("pesan").innerHTML= "Selamat !! anda mencapai 24 dalam waktu : <b>"+sec +" </b>Second";
+		document.getElementById("pesan").innerHTML= "Congrats !! you got 24 in : <b>"+sec +" </b>Seconds";
 	}
 	return akhir;
 }
