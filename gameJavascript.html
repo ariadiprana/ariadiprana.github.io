@@ -5,7 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/index.css" />
-    <script type="text/javascript" src="javascripts/P0W2D4_ContactList/contact-list.js"></script>
+    <script type="text/javascript" src="javascripts/P0W2D5_GameJavascript/gameJavascript.js"></script>
+    <script src="http://nerdamer.com/js/nerdamer.core.js"></script>
 
 <!--Personal Meta Data -->
     <meta name="description" content="ariadiprana landing page powered by Hactiv8.">
@@ -27,7 +28,7 @@
     <meta name="twitter:image:src" content="https://ariadiprana.github.io/images/logo-hacktiv8_bordered.png">
   
   </head>
-  <body>
+  <body onload="mulaiPermainan()">
     <div id="page-wrapper">
 
       <!-- Header -->
@@ -68,24 +69,80 @@
       <!-- Main -->
         <section id="main" class="container">
           <header>
-          	<h2>Contact List</h2>
-            <p><em>Budi .. Andi .. Lia .. Joko</em></p>
+            <h2>24</h2>
+            <p><em>Game kok mikirnya berat-berat banget</em></p>
+            <br>
+            <input type="button" onclick="mulaiPermainan()" value="Random">
+            <div id="opening">
+              <table>
+                <tr> 
+                  <td>
+                    <div id="randomAngka1"></div>
+                  </td>
+                  <td>
+                    <div id="randomAngka2"></div>
+                  </td>
+                  <td>
+                    <div id="randomAngka3"></div>
+                  </td>
+                  <td>
+                    <div id="randomAngka4"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="4">
+                    <div id="total"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="4">
+                    <div id="pesan"></div>
+                  </td>
+                </tr>
+            </div>
+
             <table>
-              <tr>
-                <td>
-                  <input type="button" onclick="addContact()" value="Add Contact">
-                </td>
-                <td>
-                  <input type="button" onclick="deleteContact()" value="Delete Contact">
-                </td>
-                <td>
-                  <input type="button" onclick="cariContact()" value="Cari Contact">
-                </td>
-              </tr>
+                <tr>
+                  <td colspan="4">
+                    4 angka diatas adalah angka bulat antara 1-10 yang secara acak diambil oleh komputer.
+                    <br>Tugas anda mudah sekali, gunakan nalar matematika anda untuk
+                    <br>menambah, mengurang, membagi, dan mengali
+                    <br>angka-angka tersebut sehingga akhirnya menghasilkan jumlah 24.
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <input type="button" id="bt_angka1" onclick="bt_angka1()">
+                  </td>
+                  <td>
+                    <input type="button" id="bt_angka2" onclick="bt_angka2()">
+                  </td>
+                  <td>
+                    <input type="button" id="bt_angka3" onclick="bt_angka3()">
+                  </td>
+                  <td>
+                    <input type="button" id="bt_angka4" onclick="bt_angka4()">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <input type="button" id="bt_tambah" value="+" onclick="bt_tambah()">
+                  </td>
+                  <td>
+                    <input type="button" id="bt_kurang" value="-" onclick="bt_kurang()">
+                  </td>
+                  <td>
+                    <input type="button" id="bt_kali" value="x" onclick="bt_kali()">
+                  </td>
+                  <td>
+                    <input type="button" id="bt_bagi" value="/" onclick="bt_bagi()"/>
+                  </td>
+                </tr>
             </table>
-            <div id="pesan"></div>
+            <br><br>
             <div id="hasil"></div>
-            <div id="showContactList"></div>
           </header> 
 
         <!-- Footer -->
