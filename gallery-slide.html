@@ -26,7 +26,7 @@
     <meta name="twitter:image:src" content="https://ariadiprana.github.io/images/logo-hacktiv8_bordered.png">
 
   </head>
-  <body>
+  <body onload="mulai()">
     <div id="page-wrapper">
 
       <!-- Header -->
@@ -76,9 +76,15 @@
       <!-- Main -->
         <section id="main" class="container">
           <header>
-            <h2>Text Style</h2>
+            <h2>Gallery Slide</h2>
             <br>
-                  <p id="tulisan" onmousedown="makeBold()" oncontextmenu="makeItalic()">Tulisan ini akan berubah-rubah</p>
+              <form>
+              
+              <img id="gambar" src="images/gallery-slides/p1.jpg" width="300px">
+              <br>
+              <a class="button" onclick="mundur()">Previous</a>
+              <a class="button" onclick="maju()">Maju</a>
+              </form>
           </header> 
 
           
@@ -103,15 +109,31 @@
       <script src="assets/js/main.js"></script>
 
       <script>
-            function makeBold() {
-              document.getElementById("tulisan").style.fontStyle = "normal";
-              document.getElementById("tulisan").style.fontWeight = "900";
+            var src = new Array("images/gallery-slides/p1.jpg", "images/gallery-slides/p2.jpg", "images/gallery-slides/p3.jpg");
+            var currentImage=src[0];
+            var currentIndex=0;
+
+            function mulai() {
+              console.log("current image : "+currentImage.split("/").pop());
             }
+
+            function mundur() {
+              currentIndex--;
+              if(currentIndex==-1){
+                alert("sudah di gambar pertama");
+                currentIndex=0;
+              }
+              document.getElementById("gambar").src = src[currentIndex];
+            };
             
-            function makeItalic() {
-              document.getElementById("tulisan").style.fontWeight = "300";
-              document.getElementById("tulisan").style.fontStyle = "italic"; 
-            }
+            function maju() {
+              currentIndex++;
+              if(currentIndex==3){
+                alert("sudah di gambar terakhir");
+                currentIndex=2;
+              }
+              document.getElementById("gambar").src = src[currentIndex];
+            };
       </script>
   </body>
 </html>
