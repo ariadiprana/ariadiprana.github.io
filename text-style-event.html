@@ -61,6 +61,7 @@
                 <a href="#" class="icon fa-angle-down">Week 3</a>
                 <ul>
                   <li><a href="rainbow-text.html">Rainbow Text</a></li>
+                  <li><a href="text-style-event.html">Text Style Event</a></li>
                 </ul>
               </li>
               <li><a href="reflection.html">Reflection</a></li>
@@ -102,10 +103,12 @@
 
       <script>
             function makeBold() {
-              document.getElementById("tulisan").style.fontStyle = "bold";
+              document.getElementById("tulisan").style.fontStyle = "normal";
+              document.getElementById("tulisan").style.fontWeight = "900";
             }
             
             function makeItalic() {
+              document.getElementById("tulisan").style.fontWeight = "300";
               document.getElementById("tulisan").style.fontStyle = "italic"; 
             }
       </script>
