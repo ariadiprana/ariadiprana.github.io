@@ -5,8 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/index.css" />
-    <script type="text/javascript" src="javascripts/P0W2D5_GameJavascript/gameJavascript.js"></script>
-    <script src="javascripts/P0W2D5_GameJavascript/nerdamer.core.js"></script>
+    <script type="text/javascript" src="javascripts/P0W3D4_Guess/guess.js"></script>
 
 <!--Personal Meta Data -->
     <meta name="description" content="ariadiprana landing page powered by Hactiv8.">
@@ -28,7 +27,7 @@
     <meta name="twitter:image:src" content="https://ariadiprana.github.io/images/logo-hacktiv8_bordered.png">
   
   </head>
-  <body onload="mulaiPermainan()">
+  <body onload="mulai()">
     <div id="page-wrapper">
 
       <!-- Header -->
@@ -79,79 +78,22 @@
       <!-- Main -->
         <section id="main" class="container">
           <header>
-            <h2>24</h2>
-            <p><em>Yes you are smarter than a 5th grader :) </em></p>
+            <h2>Tebak-tebakan</h2>
+            <p><em>ayo tebak angka apa yang dipilih komputer antara 1-10 ini</em></p>
             <br>
-            <input type="button" onclick="mulaiPermainan()" value="Random">
-            <div id="opening">
-              <table>
-                <tr> 
-                  <td>
-                    <div id="randomAngka1"></div>
-                  </td>
-                  <td>
-                    <div id="randomAngka2"></div>
-                  </td>
-                  <td>
-                    <div id="randomAngka3"></div>
-                  </td>
-                  <td>
-                    <div id="randomAngka4"></div>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="4">
-                    <div id="total"></div>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="4">
-                    <div id="pesan"></div>
-                  </td>
-                </tr>
-              </table>
-            </div>
+            Nyawa kamu tinggal <div id="nyawa"></div>
+            <br><br>
+            <input id="inputan" type="textbox" size="10" >
+            <br><br>
+            <input type="button" onclick="tebak()" value="Tebak">
 
-            <table>
-                <tr>
-                  <td colspan="4">
-                    These 4 numbers are randomized by computer as integer between 1-10 .
-                    <br>Easy task, use your math skill to <br>add, substract, multiply, or divide the numbers and make it to 24
-                  </td>
-                </tr>
-                
-                <tr>
-                  <td>
-                    <input type="button" id="bt_angka1" onclick="bt_angka1()">
-                  </td>
-                  <td>
-                    <input type="button" id="bt_angka2" onclick="bt_angka2()">
-                  </td>
-                  <td>
-                    <input type="button" id="bt_angka3" onclick="bt_angka3()">
-                  </td>
-                  <td>
-                    <input type="button" id="bt_angka4" onclick="bt_angka4()">
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <input type="button" id="bt_tambah" value="+" onclick="bt_tambah()">
-                  </td>
-                  <td>
-                    <input type="button" id="bt_kurang" value="-" onclick="bt_kurang()">
-                  </td>
-                  <td>
-                    <input type="button" id="bt_kali" value="x" onclick="bt_kali()">
-                  </td>
-                  <td>
-                    <input type="button" id="bt_bagi" value="/" onclick="bt_bagi()"/>
-                  </td>
-                </tr>
-            </table>
             <br><br>
             <div id="hasil"></div>
+            <br>
+            <img src="images/number-guess/guess.jpg"/>
+            <br><br>
+            
+
           </header> 
 
         <!-- Footer -->
